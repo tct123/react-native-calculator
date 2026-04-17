@@ -21,10 +21,10 @@ const styles = StyleSheet.create({
   }
 });
 
-export default class App() {
-  state = initialState;
+export default function App() {
+  const state = initialState;
 
-  handleTap = (type, value) => {
+  const handleTap = (type, value) => {
     this.setState(state => calculator(type, value, state));
   };
 
@@ -41,7 +41,7 @@ export default class App() {
             size={20}
             text="C"
             theme="secondary"
-            onPress={() => this.handleTap("clear")}
+            onPress={() => this.handleTap(null, "clear")}
           />
           <Button
             size={20}
@@ -64,9 +64,9 @@ export default class App() {
         </Row>
 
         <Row>
-          <Button size={20} text="7" onPress={() => this.handleTap("number", 7)} />
-          <Button size={20} text="8" onPress={() => this.handleTap("number", 8)} />
-          <Button size={20} text="9" onPress={() => this.handleTap("number", 9)} />
+          <Button theme={null} size={20} text="7" onPress={() => this.handleTap("number", 7)} />
+          <Button theme={null} size={20} text="8" onPress={() => this.handleTap("number", 8)} />
+          <Button theme={null} size={20} text="9" onPress={() => this.handleTap("number", 9)} />
           <Button
             size={20}
             text="x"
@@ -76,10 +76,10 @@ export default class App() {
         </Row>
 
         <Row>
-          <Button text="4" onPress={() => this.handleTap("number", 4)} />
-          <Button text="5" onPress={() => this.handleTap("number", 5)} />
-          <Button text="6" onPress={() => this.handleTap("number", 6)} />
-          <Button
+          <Button size={20} theme={null} text="4" onPress={() => this.handleTap("number", 4)} />
+          <Button size={20} theme={null} text="5" onPress={() => this.handleTap("number", 5)} />
+          <Button size={20} theme={null} text="6" onPress={() => this.handleTap("number", 6)} />
+          <Button size={20}
             text="-"
             theme="accent"
             onPress={() => this.handleTap("operator", "-")}
@@ -87,10 +87,10 @@ export default class App() {
         </Row>
 
         <Row>
-          <Button text="1" onPress={() => this.handleTap("number", 1)} />
-          <Button text="2" onPress={() => this.handleTap("number", 2)} />
-          <Button text="3" onPress={() => this.handleTap("number", 3)} />
-          <Button
+          <Button theme={null} size={20} text="1" onPress={() => this.handleTap("number", 1)} />
+          <Button theme={null} size={20} text="2" onPress={() => this.handleTap("number", 2)} />
+          <Button theme={null} size={20} text="3" onPress={() => this.handleTap("number", 3)} />
+          <Button size={20}
             text="+"
             theme="accent"
             onPress={() => this.handleTap("operator", "+")}
@@ -99,19 +99,19 @@ export default class App() {
 
         <Row>
           <Button
+            theme={null}
             text="0"
             size="double"
             onPress={() => this.handleTap("number", 0)}
           />
-          <Button text="." onPress={() => this.handleTap("number", ".")} />
+          <Button text="." onPress={() => this.handleTap("number", ".")} size={undefined} theme={undefined} />
           <Button
             text="="
             theme="accent"
             onPress={() => this.handleTap("equal")}
-          />
+            size={undefined} />
         </Row>
       </SafeAreaView>
     </View>
   );
-
 }
