@@ -34,14 +34,14 @@ export default function App() {
       <StatusBar barStyle="light-content" />
       <SafeAreaView>
         <Text style={styles.value}>
-          {parseFloat(this.state.currentValue).toLocaleString()}
+          {parseFloat(state.currentValue).toLocaleString()}
         </Text>
         <Row>
           <Button
             size={20}
             text="C"
             theme="secondary"
-            onPress={() => this.handleTap(null, "clear")}
+            onPress={() => this.handleTap("", "clear")}
           />
           <Button
             size={20}
