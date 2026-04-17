@@ -2,8 +2,8 @@
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "eject": "expo eject",
     "lint": "eslint ."
   },
@@ -24,5 +24,7 @@
     "@types/react": "~19.2.10",
     "eslint": "^9.0.0",
     "eslint-config-expo": "~55.0.0"
-  }
+  },
+  "name": "react-native-calculator",
+  "version": "1.0.0"
 }
