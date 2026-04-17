@@ -4,7 +4,7 @@
     "slug": "Calculator",
     "version": "1.0.0",
     "icon": "./assets/images/icon.png",
-    "scheme": "awesomeproject",
+    "scheme": "calculator",
     "userInterfaceStyle": "automatic",
     "ios": {
       "icon": "./assets/expo.icon",
@@ -18,10 +18,10 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false,
-      "package": "com.tct123.AwesomeProject"
+      "package": "com.tct123.Calculator"
     },
     "web": {
-      "output": "static",
+      "output": "single",
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [],
