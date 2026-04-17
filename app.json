@@ -2,7 +2,6 @@
   "expo": {
     "name": "Calculator",
     "slug": "Calculator",
-    "privacy": "public",
     "platforms": [
       "ios",
       "android"
