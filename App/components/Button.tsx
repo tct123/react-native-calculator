@@ -40,14 +40,14 @@ export default ({ onPress, text, size, theme }) => {
   const textStyles = [styles.text];
 
   if (size === "double") {
-    buttonStyles.push(styles.buttonDouble);
+    styles.buttonDouble
   }
 
   if (theme === "secondary") {
-    buttonStyles.push(styles.buttonSecondary);
-    textStyles.push(styles.textSecondary);
+    styles.buttonSecondary,
+      styles.textSecondary
   } else if (theme === "accent") {
-    buttonStyles.push(styles.buttonAccent);
+    styles.buttonAccent
   }
 
   return (
