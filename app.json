@@ -2,26 +2,32 @@
   "expo": {
     "name": "Calculator",
     "slug": "Calculator",
-    "platforms": [
-      "ios",
-      "android"
-    ],
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "icon": "./assets/images/icon.png",
+    "scheme": "awesomeproject",
+    "userInterfaceStyle": "automatic",
     "ios": {
-      "supportsTablet": true
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "com.tct123.AwesomeProject"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.tct123.AwesomeProject"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
     }
   }
 }
