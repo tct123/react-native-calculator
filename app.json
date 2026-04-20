@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Calculator",
-    "slug": "Calculator",
+    "slug": "calculator",
     "version": "1.0.0",
     "icon": "./assets/images/icon.png",
     "scheme": "calculator",
