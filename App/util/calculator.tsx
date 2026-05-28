@@ -4,7 +4,7 @@ export const initialState = {
   previousValue: null
 };
 
-export const handleNumber = (value, state) => {
+export const handleNumber = (value: any, state: { currentValue: string; }) => {
   if (state.currentValue === "0") {
     return { currentValue: `${value}` };
   }
@@ -14,7 +14,7 @@ export const handleNumber = (value, state) => {
   };
 };
 
-export const handleEqual = state => {
+export const handleEqual = (state: { currentValue: any; previousValue: any; operator: any; }) => {
   const { currentValue, previousValue, operator } = state;
 
   const current = parseFloat(currentValue);
@@ -55,7 +55,7 @@ export const handleEqual = state => {
   return state;
 };
 
-const calculator = (type, value, state) => {
+const calculator = (type: any, value: any, state: { currentValue: string; }) => {
   switch (type) {
     case "number":
       return handleNumber(value, state);
