@@ -24,8 +24,8 @@ const styles = StyleSheet.create({
 export default function App() {
   const state = initialState;
 
-  const handleTap = (type, value) => {
-    this.setState(state => calculator(type, value, state));
+  const handleTap = (type: any, value: any) => {
+    this.setState((state: { currentValue: string; }) => calculator(type, value, state));
   };
 
 
